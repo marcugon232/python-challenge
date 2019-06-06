@@ -1,10 +1,10 @@
-# Import dependencies
+
 import os
 import csv
 from pathlib import Path 
 
-
-csv_file_path = Path("python-challenge", "PyPoll", "election_data.csv")
+# Assign file location with the pathlib library
+csv_file_path = Path("Documents", "python-challenge", "PyPoll", "election_data.csv")
 
 # Declare Variables 
 total_votes = 0 
@@ -68,7 +68,8 @@ print(f"Winner: {key}")
 print(f"----------------------------")
 
 # Output files
-output_file = Path("python-challenge", "PyPoll", "Election_Results_Summary.txt")
+# Assign output file location and with the pathlib library
+output_file = Path("Documents", "python-challenge", "PyPoll", "Election_Results_Summary.txt")
 
 with open(output_file,"w") as file:
 
